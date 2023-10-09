@@ -32,5 +32,6 @@ const ContactList = () => {
     </ul >
   );
 };
+
 export default ContactList;
 
