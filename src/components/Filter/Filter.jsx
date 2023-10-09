@@ -11,8 +11,14 @@ const Filter = () => {
   return (
     <label>
       Find contacts by name
-      <input type="text" onChange={onChange} className={css.inputText} />
-    </label >
+      <input
+        type="text"
+        name="name"
+        onChange={onChange}
+        className={css.inputText}
+        autoComplete='off'
+      />
+    </label>
   );
 };
 export default Filter;

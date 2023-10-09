@@ -23,6 +23,7 @@ import { addContact } from 'redux/contactsSlice';
         <input
           type="text"
           name="name"
+          autoComplete='off'
           required
         />
       </label>
