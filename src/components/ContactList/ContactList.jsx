@@ -17,7 +17,7 @@ const ContactList = () => {
   
   return (
     <ul>
-      {filteredContacts().length > 0 && (
+      {filteredContacts().length > 0 ? (
         filteredContacts().map(({ id, name, number }) => (
           <li className={css.contact} key={nanoid()}>
             {name}: {number}
@@ -28,7 +28,7 @@ const ContactList = () => {
             </button>
           </li>
         ))
-      )}
+      ) : (alert("Add contacts at phonebook"))}
     </ul >
   );
 };
