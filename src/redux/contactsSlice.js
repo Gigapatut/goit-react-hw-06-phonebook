@@ -10,7 +10,7 @@ const contactsSlice = createSlice({
   reducers: {
     addContact: {
       reducer(state, action) {
-        const contactsName = state.contacts.map(contact => contact.name);
+        const contactsName = state.contacts.map(el => el.name);
         const name = action.payload.name;
         contactsName.includes(name)
           ? alert(`${name} is already in contacts`)
