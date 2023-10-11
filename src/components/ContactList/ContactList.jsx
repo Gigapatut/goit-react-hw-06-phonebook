@@ -24,7 +24,7 @@ const ContactList = () => {
             <button className={css.delete} onClick={() => {
               dispatch(delContact({ id }));
               }}>
-              Delite
+              Delete
             </button>
           </li>
         ))
